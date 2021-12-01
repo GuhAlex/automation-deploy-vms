@@ -14,17 +14,17 @@ User-friendly automation for create VMs on vCenter
 
 - Cloning the repository
 
-      ```
-      git clone git@github.com:GuhAlex/automation-deploy-vms.git
-      ```
+    ```
+    git clone git@github.com:GuhAlex/automation-deploy-vms.git
+    ```
 - Set the path of your kv secret on data block of the **main.tf** file:
 
-        ```
-          data "vault_generic_secret" "vcenter" {
-            path = "services/vcenter"
-          }
+    ```
+      data "vault_generic_secret" "vcenter" {
+        path = "services/vcenter"
+      }
 
-        ```
+    ```
 
 - Set the Key of your KV sercret on block "**provider** **vsphere**" on **main.tf** file:
 
